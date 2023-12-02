@@ -174,8 +174,30 @@ div {
   font-family: "Pretendard-Bold";
   font-size: 1.1rem;
   background-color: white;
-  border: 1px solid #dcdcdc;
+  border: 2px solid #dcdcdc;
   color: #666666;
+}
+
+.campusBtn:hover {
+  animation: forwards 0.5s fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    border: 2px solid #dcdcdc;
+    color: #666666;
+  }
+  to {
+    border: 2px solid rgb(30, 43, 153);
+    color: rgb(30, 43, 153);
+  }
+}
+
+.checked{
+  background: rgb(0,212,255);
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(0,121,255,1) 100%);
+  color: white;
+  border: 2px solid rgb(0,212,255);
 }
 
 #subTitle {
@@ -190,11 +212,11 @@ div {
   background-color: white;
   border-radius: 1rem;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .content-box {
-  margin: 2vh;
+  margin: 2vh 1.4vw 2vh 1.4vw;
   display: inline-block;
   flex-direction: column;
   justify-content: center;

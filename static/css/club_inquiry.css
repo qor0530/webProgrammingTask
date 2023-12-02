@@ -86,3 +86,96 @@ li {
     padding: 0;
     margin: 0;
 }
+
+#nav {
+    float: left;
+    width: 15%;
+}
+
+#container {
+    float: right;
+    width: 85%;
+    height: 93vh;
+    background-color: #f0f0f0;
+    border-top: 7vh solid #fafafa;
+}
+
+#club-info {
+    margin: 4vh 0 0 8vw;
+}
+
+#title {
+    font-family: "Pretendard-Bold";
+    font-size: 2rem;
+    margin-bottom: 1vh;
+}
+
+#search-bar{
+    width: 70vw;
+    height: 8vh;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 2vh;
+}
+
+#search-title {
+    display: inline-block;
+    font-family: "Pretendard-Regular";
+    margin-bottom: 1vh;
+}
+
+#campus-select {
+    width: 10vw;
+    height: 3vh;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-right: 1vw;  
+}
+
+#property-select {
+    width: 10vw;
+    height: 3vh;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-right: 1vw;  
+}
+
+#club-name {
+    width: 20vw;
+    height: 3vh;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-right: 1vw;  
+
+}
+
+#search {
+    font-family: "Pretendard-SemiBold";
+    border : 0;
+    width: 3vw;
+    height: 3vh;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-right: 1vw;  
+    color: white;
+    background-color: #009AE9;
+}
+
+#search-result {
+    font-family: "Pretendard-Bold";
+    font-size: 1.4rem;
+    margin-bottom: 1vh;
+}
+
+#result {
+    width: 70vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    overflow-y: hidden;
+}

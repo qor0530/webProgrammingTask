@@ -1,5 +1,6 @@
-document.getElementById("article").innerHTML += `<div class="content-box">
-<img src="{% static 'image/content-image.png'%}" alt="" />
+for (let i = 0; i < 10; i++) {
+  document.getElementById("article").innerHTML += `<div class="content-box">
+<img src="../../static/image/content-image.png" alt="" />
 <div class="content">
   <div class="content-title">멋장이사자처럼</div>
   <div class="content-description">
@@ -13,5 +14,5 @@ document.getElementById("article").innerHTML += `<div class="content-box">
     <div class="date">2023-12-02</div>
   </div>
 </div>
-</div>`
- 
+</div>`;
+}
