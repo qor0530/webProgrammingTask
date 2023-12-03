@@ -1,7 +1,7 @@
 //공연, 봉사, 체육, 문화, 학술, 종교
 campus = {
-  가좌: {
-    공연: [
+  '가좌': {
+    '공연': [
       "기라성",
       "햇귀",
       "피오니어챔버오케스트라",
@@ -18,7 +18,7 @@ campus = {
       "경상극예술연구회",
       "악동",
     ],
-    봉사: [
+    '봉사': [
       "해피빌더스",
       "한울회",
       "유니피스",
@@ -31,7 +31,7 @@ campus = {
       "A to Z",
       "진주대학생연합봉사동아리 위더스",
     ],
-    체육: [
+    '체육': [
       "화랑회",
       "카운터",
       "점보",
@@ -50,7 +50,7 @@ campus = {
       "FC BB",
       "ELEVEN",
     ],
-    문화: [
+    '문화': [
       "그릴자유",
       "경상바둑회(돌밭)",
       "죽로다우회",
@@ -58,7 +58,7 @@ campus = {
       "흔적",
       "얼사랑",
     ],
-    학술: [
+    '학술': [
       "핀스킨(Pinskin)",
       "APLUSES",
       "경상타임연구회",
@@ -67,7 +67,7 @@ campus = {
       "하소연",
       "고나푸스",
     ],
-    종교: [
+    '종교': [
       "인터콥",
       "JDM",
       "IVF",
@@ -81,10 +81,10 @@ campus = {
       "GNU Cross",
     ],
   },
-  칠암: {
-    공연: ["파랑새", "NAND", "COLORS", "반하나", "메아리", "나이테"],
-    봉사: ["다소다", "로타렉트", "유니피스", "흙", "해병동지회"],
-    체육: [
+  '칠암': {
+    '공연': ["파랑새", "NAND", "COLORS", "반하나", "메아리", "나이테"],
+    '봉사': ["다소다", "로타렉트", "유니피스", "흙", "해병동지회"],
+    '체육': [
       "하이브리드",
       "퍼펙트",
       "탑스핀",
@@ -95,7 +95,7 @@ campus = {
       "JTC",
       "J&J",
     ],
-    문화: [
+    '문화': [
       "청리",
       "방울방울",
       "IF",
@@ -105,8 +105,8 @@ campus = {
       "마인드디자인",
       "칠차삼정",
     ],
-    학술: ["칠엽수", "올 메이커즈", "천도", "수", "이카루스"],
-    종교: [
+    '학술': ["칠엽수", "올 메이커즈", "천도", "수", "이카루스"],
+    '종교': [
       "IVF 한국기독학생회",
       "EBS (English Bible Study)",
       "SFC",
@@ -117,9 +117,12 @@ campus = {
 };
 function search() {
   document.getElementById("result").innerHTML = "";
-  choiced_campus = campus[document.getElementById("campus-select").value];
-  choiced_property =
-    choiced_campus[document.getElementById("property-select").value];
+  get_campus = document.getElementById("campus-select").value;
+  choiced_campus = campus[get_campus];
+  console.log(choiced_campus);
+  get_property = document.getElementById("property-select").value;
+  console.log(get_property);
+  choiced_property = choiced_campus[get_property];
   let input = document.getElementById("club-name").value;
   input = input.toLowerCase();
   search_result = new Array();
@@ -129,6 +132,14 @@ function search() {
     }
   }
   for (let i = 0; i < search_result.length; i++) {
-    document.getElementById("result").innerHTML += search_result[i];
+    document.getElementById("result").innerHTML += `
+    <div class="search-result">
+    <div class="left-result">
+      <div class="club-campus">${get_campus}캠퍼스</div>
+      <div class="club-property">${get_property} 분과</div>
+      <div class="club-name">${search_result[i]}</div>
+    </div>
+    <div class="club-join">가입하기</div>
+  </div>`;
   }
 }
