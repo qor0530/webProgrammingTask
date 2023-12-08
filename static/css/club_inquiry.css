@@ -192,9 +192,9 @@ li {
     padding: 0.5rem;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #f8f8f8;
     color: white;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
 }
 
 .left-result {
@@ -241,6 +241,10 @@ li {
     margin-right: 0.5vw;
     line-height: 4vh;
     color: white;
+}
+
+.club-join:hover {
+    cursor: pointer;
 }
 
 .applyModal {
