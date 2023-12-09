@@ -96,7 +96,7 @@ li {
     float: right;
     width: 85%;
     height: 93vh;
-    background-color: #f0f0f0;
+    background-color: #F4F5F8;
     border-top: 7vh solid #fafafa;
 }
 
@@ -162,7 +162,7 @@ li {
     padding: 0.5rem;
     margin-right: 1vw;  
     color: white;
-    background-color: rgb(64, 188, 203);
+    background-color: #009AE9;
 }
 
 #search:hover {
@@ -206,7 +206,7 @@ li {
 }
 
 .club-campus{
-    background-color:rgb(64, 188, 203);
+    background-color:#009AE9;
     width: 5vw;
     text-align: center;
     height:4vh;
@@ -216,7 +216,7 @@ li {
     margin-left: 0.3vw;
 }
 .club-property {
-    background-color:rgb(64, 188, 203);
+    background-color:#009AE9;
     width: 5vw;
     text-align: center;
     height:4vh;
@@ -233,7 +233,7 @@ li {
 .club-join {
     float: right;
     font-family: "Pretendard-Bold";
-    background-color: rgb(64, 188, 203);
+    background-color: #009AE9;
     width: 5vw;
     text-align: center;
     height:4vh;
@@ -245,18 +245,4 @@ li {
 
 .club-join:hover {
     cursor: pointer;
-}
-
-.applyModal {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(-50%, -50%);
-    z-index: 99999;
 }

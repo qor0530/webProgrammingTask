@@ -90,13 +90,18 @@ li {
 #nav {
     float: left;
     width: 15%;
+    line-height: 100vh;
+    text-align: center;
+    font-family: 'Pretendard-Bold';
+    background-color: #CCFEFE;
+    font-size: 1.2rem;
 }
 
 #container {
     float: right;
     width: 85%;
     height: 93vh;
-    background-color: #f0f0f0;
+    background-color: #F4F5F8;
     border-top: 7vh solid #fafafa;
 }
 
@@ -108,6 +113,62 @@ li {
     font-family: "Pretendard-Bold";
     font-size: 2rem;
     margin-bottom: 1vh;
+}
+#modal-background{
+    position: fixed;
+    top:0; left: 0; bottom: 0; right: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#apply-btn{
+    font-family: "Pretendard-SemiBold";
+    display: flex;
+    width: 5vw;
+    height: 3vh;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 3vh;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-right: 12vw;
+    color: white;
+    background-color: rgb(64, 188, 203);
+    float: right;
+    justify-content: space-evenly;
+}
+
+.plus-image{
+    display: absolute;
+    background-image: url("../image/plus.png");
+    background-size: cover;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-left: 0.3rem;
+}
+
+#apply-text {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+#apply-btn:hover {
+    cursor: pointer;
+}
+
+#club-apply-btn {
+    font-family: "Pretendard-SemiBold";
+    width: 5vw;
+    height: 3vh;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 3vh;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    float: right;
+    margin-right: 4vw;
+    margin-top: 1.5vh;
+    background-color: rgb(64, 188, 203);
 }
 
 #search-bar{
@@ -121,7 +182,20 @@ li {
 
 #apply-title {
     font-family: "Pretendard-Bold";
-    margin-bottom: 1vh;
+    font-size: 1.4rem;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+    padding-left: 3vw;
+    text-align: left;
+    border-bottom: #8a8a8a 1px solid;
+    justify-content: space-between;
+}
+
+#ser-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 3vw 0 3vw;
 }
 
 #search-title {
@@ -133,7 +207,7 @@ li {
 }
 
 #campus-select {
-    width: 10vw;
+    width: 15vw;
     height: 3vh;
     border: 1px solid #d0d0d0;
     border-radius: 0.5rem;
@@ -142,7 +216,7 @@ li {
 }
 
 #property-select {
-    width: 10vw;
+    width: 15vw;
     height: 3vh;
     border: 1px solid #d0d0d0;
     border-radius: 0.5rem;
@@ -151,13 +225,24 @@ li {
 }
 
 #club-name {
-    width: 20vw;
+    width: 32vw;
     height: 3vh;
     border: 1px solid #d0d0d0;
     border-radius: 0.5rem;
     padding: 0.5rem;
     margin-right: 1vw;  
+}
 
+#fighting {
+    width: 32vw;
+    height: 24vh;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-right: 1vw;  
+    margin-top: 1vh;
+    font-family: 'Pretendard-SemiBold';
+    resize: none;
 }
 
 #search {
@@ -196,3 +281,106 @@ li {
     margin-bottom: 2vh;
 }
 
+#apply-modal {
+    position:absolute;
+    top:50%; 
+    left:30%;
+    width:40vw;  
+    height:60vh; 
+    text-align: center;
+    background-color: rgb(255,255,255); 
+    border-radius:10px; 
+    box-shadow:0 2px 3px 0 rgba(34,36,38,0.15); 
+    transform:translateY(-50%);
+}
+
+.apply-club {
+    width: 65vw;
+    height: 12vh;
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Pretendard-SemiBold';
+}
+
+.upside {
+    width: 100%;
+    height: 49%;
+    display: flex;
+    align-items: center;
+}
+
+.middleside {
+    width: 100%;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    background-color: #E7E7E7;
+}
+
+.downside {
+    width: 100%;
+    height: 49%;
+    display: flex;
+    align-items: center;
+}
+
+.club-campus{
+    width: 3vw;
+    height: 1.5vh;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-left: 1vw;  
+    margin-right: 0.5vw;  
+    flex-grow: unset;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #24ABE0;
+    background-color: #CCFEFE;
+}
+.club-property{
+    width: 3vw;
+    height: 1.5vh;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-right: 1vw;  
+    flex-grow: unset;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: #DDF9E4;
+    color: #225908;
+}
+.club-name{
+    font-family: 'Pretendard-Bold';
+    height: 3vh;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    margin-right: 1vw;  
+    flex-grow: 1;
+}
+.apply-date{
+    font-family: 'Pretendard-Bold';
+    width: 13vw;
+    height: 3vh;
+    border-radius: 0.5rem;
+    margin-left: 0.8vw;  
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 3vh;
+    margin-right: 1vw;  
+    flex-grow: unset;
+}
+.apply-result{
+    font-family: 'Pretendard-Bold';
+    width: 10vw;
+    line-height: 3vh;
+    font-size: 1.2rem;
+    height: 3vh;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-right: 1vw;  
+    flex-grow: unset;
+}

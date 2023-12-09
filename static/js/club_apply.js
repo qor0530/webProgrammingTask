@@ -127,7 +127,24 @@ function search() {
       search_result.push(choiced_property[i]);
     }
   }
+  let club = document.getElementById("club-name");
   for (let i = 0; i < search_result.length; i++) {
-    document.getElementById("result").innerHTML += search_result[i];
+    club.innerHTML += `<option value="${search_result[i]}">${search_result[i]}</option>`;
   }
 }
+
+let modal_background = document.getElementById("modal-background");
+let apply_modal = document.getElementById("apply-modal");
+modal_background.style.display = "none";
+apply_modal.style.display = "none";
+
+let apply_btn = document.getElementById("apply-btn");
+
+apply_btn.onclick = function () {
+  modal_background.style.display = "block";
+  apply_modal.style.display = "block";
+  modal_background.addEventListener("click", function () {
+    modal_background.style.display = "none";
+    apply_modal.style.display = "none";
+  });
+};
