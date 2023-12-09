@@ -119,9 +119,16 @@ li {
     margin-bottom: 2vh;
 }
 
+#apply-title {
+    font-family: "Pretendard-Bold";
+    margin-bottom: 1vh;
+}
+
 #search-title {
     display: inline-block;
     font-family: "Pretendard-Regular";
+    font-size: 0.8rem;
+    color: #8a8a8a;
     margin-bottom: 1vh;
 }
 
@@ -189,52 +196,3 @@ li {
     margin-bottom: 2vh;
 }
 
-.left-result {
-    float: left;
-    width: 90%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.club-campus{
-    background-color:rgb(64, 188, 203);
-    width: 5vw;
-    text-align: center;
-    height:4vh;
-    line-height: 4vh;
-    border-radius: 0.5rem;
-    margin-right: 0.5vw;
-    margin-left: 0.3vw;
-}
-.club-property {
-    background-color:rgb(64, 188, 203);
-    width: 5vw;
-    text-align: center;
-    height:4vh;
-    border-radius: 0.5rem;
-    margin-right: 1vw;
-    line-height: 4vh;
-}
-.club-name {
-    font-family: "Pretendard-Bold";
-    font-size: 1.2rem;
-    float: left;
-    color: black;
-}
-.club-join {
-    float: right;
-    font-family: "Pretendard-Bold";
-    background-color: rgb(64, 188, 203);
-    width: 5vw;
-    text-align: center;
-    height:4vh;
-    border-radius: 0.5rem;
-    margin-right: 0.5vw;
-    line-height: 4vh;
-    color: white;
-}
-
-.club-join:hover {
-    cursor: pointer;
-}
